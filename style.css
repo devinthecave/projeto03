@@ -1,9 +1,8 @@
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   min-width: 1280px;
-  overflow: hidden;
   background: linear-gradient(
     180deg,
     rgba(227, 255, 248, 0) 0%,
@@ -13,27 +12,29 @@ body {
 .page {
   margin: auto;
   padding-top: 65px;
-  width: 1005px;
+  width: 1000px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: "Mulish", sans-serif;
   font-weight: 400;
 }
 nav,
 ul {
   display: flex;
-  gap: 45px;
+  gap: 48px;
   list-style: none;
   color: #1f1534;
+  opacity: 0.5;
+   align-items: center;
 }
 
 li:hover {
   cursor: pointer;
   font-weight: bold;
+  opacity: 1;
 }
 
 h1 {
@@ -86,6 +87,7 @@ footer {
 footer a {
   color: #1f1534;
   text-decoration: none;
+  font-weight: bold;
 }
 .balls {
   position: fixed;
